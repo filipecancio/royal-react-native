@@ -1,13 +1,14 @@
 import React from 'react';
 import {Text, View } from 'react-native';
+import { Container } from './styles';
 
 
 function Sent(){
     return(
         <>
-            <View>
+            <Container>
                 <Text>Sent</Text>
-            </View>
+            </Container>
         </>
     );
 }

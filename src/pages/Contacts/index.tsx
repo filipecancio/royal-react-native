@@ -1,13 +1,14 @@
 import React from 'react';
 import {Text, View } from 'react-native';
+import { Container } from './styles';
 
 
 function Contacts(){
     return(
         <>
-            <View>
+            <Container>
                 <Text>Contacts</Text>
-            </View>
+            </Container>
         </>
     );
 }
