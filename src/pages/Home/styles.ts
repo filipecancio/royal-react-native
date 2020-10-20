@@ -1,13 +1,13 @@
 import styled from 'styled-components/native';
 
+export const Logo = styled.Image`
+margin: 50px;
+`;
 export const Container = styled.View`
 	flex:1;
-	background-color: blueviolet;
+	top:0;
+	background-color: #009FF9;
 	justify-content: center;
 	align-items: center;
   
-`;
-export const Titulo = styled.Text`
-	color:red;
-	font-size:20px;
 `;
