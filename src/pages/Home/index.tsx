@@ -10,6 +10,8 @@ import UserInformation from '../../components/UserInformation';
 
 import logo from '../../util/images/logo.png';
 import filipeAvatar from '../../util/images/filipe.png';
+import person from '../../util/data/home.json';
+
 
 
 function Home(){
@@ -26,7 +28,7 @@ function Home(){
         <>
             <Container>
                 <Logo source={logo} />
-                <UserInformation imageAvatar={filipeAvatar} /> 
+                <UserInformation info={person} /> 
                 <ButtonContact handlePage={handleContacts}/>
                 <ButtonHistory handlePage={handleSent}/>
             </Container>

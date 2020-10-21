@@ -3,19 +3,19 @@ import { Container,Titular,Apelido,Titulo } from './styles';
 import Avatar from '../Avatar';
 
 export interface Props {
-    imageAvatar: any;
+    info: any;
 }
 
 const UserInformation: React.FC<Props> = (props) => {
       return (
         <>
             <Container>
-                <Avatar source={props.imageAvatar} size={"100px"}/>
-                <Titular>Filipe Soares Câncio</Titular>
-                <Apelido>Cancio</Apelido>
-                <Titulo>filipe.cancio@gmail.com</Titulo>
-                <Titulo>ID 234</Titulo>
-                <Titulo>77 99922-2299</Titulo>
+                <Avatar source={props.info.avatar} size={"100px"}/>
+                <Titular>{props.info.name}</Titular>
+                <Apelido>{props.info.nick}</Apelido>
+                <Titulo>{props.info.email}</Titulo>
+                <Titulo>{props.info.id}</Titulo>
+                <Titulo>{props.info.phone}</Titulo>
             </Container>
         </>
       );
