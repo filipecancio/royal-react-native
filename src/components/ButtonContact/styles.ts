@@ -11,8 +11,8 @@ export const IconButton = styled.View`
     height:67px;
 
 	background-color: #FFB039;
-    border-radius: 50;
-    border-top-right-radius: 10;
+    border-radius: 50px;
+    border-top-right-radius: 10px;
     transform: rotate(45deg);
 
     margin:5px;

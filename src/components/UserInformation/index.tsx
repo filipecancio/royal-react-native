@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container,Avatar,AvatarImage,Titular,Apelido,Titulo } from './styles';
+import { Container,Titular,Apelido,Titulo } from './styles';
+import Avatar from '../Avatar';
 
 export interface Props {
     imageAvatar: any;
@@ -9,9 +10,7 @@ const UserInformation: React.FC<Props> = (props) => {
       return (
         <>
             <Container>
-                <Avatar>
-                    <AvatarImage source={props.imageAvatar} />
-                </Avatar> 
+                <Avatar source={props.imageAvatar} size={"100px"}/>
                 <Titular>Filipe Soares Câncio</Titular>
                 <Apelido>Cancio</Apelido>
                 <Titulo>filipe.cancio@gmail.com</Titulo>

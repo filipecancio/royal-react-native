@@ -9,13 +9,13 @@ export const Container = styled.View`
 `;
 export const Avatar = styled.View`
 	border: 1px #FFB039;
-	border-radius: 500;
+	border-radius: 500px;
 	padding: 5px;
 `;
 export const AvatarImage = styled.Image`
 	width: 100px;
 	height: 100px;
-	border-radius: 500;
+	border-radius: 500px;
 `;
 export const Titular = styled.Text`
 	font-family:'Raleway_700Bold';
