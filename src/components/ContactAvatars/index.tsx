@@ -1,22 +1,31 @@
 import React from 'react';
+import { ScrollView } from 'react-native-gesture-handler';
 import Avatar from '../Avatar';
-import { Container,Title } from './styles';
+import { AvatarContainer,Container,Title } from './styles';
 
 export interface Props {
     imageAvatar:any;
+    selectAvatar:(index:number)=>void;
 }
 
-const UserInformation: React.FC<Props> = (props) => {
+const ContactAvatars: React.FC<Props> = (props) => {
+
+      const {selectAvatar} = props;
       return (
         <>
-                {props.imageAvatar.map((contact:any)=>(
-                  <Container>
+        <Container>
+          <ScrollView horizontal>
+            {props.imageAvatar.map((contact:any,index:number)=>(
+                  <AvatarContainer key={index} onPress={()=>selectAvatar(index)}>
                     <Avatar source={contact.avatar} size={"50px"} />
                     <Title>{contact.nick}</Title>
-                  </Container> 
+                  </AvatarContainer> 
                 ))}
+          </ScrollView>
+        </Container>
+                
         </>
       );
     }
 
-export default UserInformation;
+export default ContactAvatars;
