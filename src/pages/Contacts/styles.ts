@@ -11,7 +11,7 @@ export const HeaderSearch = styled.View`
 	flex-direction:row;
 	align-items:center;
 	justify-content:space-around;
-	width:100%;
+	width:90%;
 `;
 export const Titulo = styled.Text`
 	color:#2C8CC2;

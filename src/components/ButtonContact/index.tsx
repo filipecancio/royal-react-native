@@ -12,7 +12,7 @@ const ButtonContact: React.FC<Props> = (props) => {
           <Container onPress={props.handlePage}>
             <IconButton>
               <IconContainer>
-              <MaterialIcons name="keyboard" size={22} color="#FFFFFF"/>
+              <MaterialIcons name="person" size={22} color="#FFFFFF"/>
               </IconContainer>
             </IconButton>
             <Legenda>Contatos</Legenda>
