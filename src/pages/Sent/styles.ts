@@ -2,8 +2,8 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
 	flex:1;
-	background-color: papayawhip;
-	justify-content: center;
+	background-color: #95C6E1;
+	justify-content: flex-start;
 	align-items: center;
   
 `;
