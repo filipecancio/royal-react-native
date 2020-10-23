@@ -20,7 +20,7 @@ const ContactInfo: React.FC<Props> = (props) => {
                 <IdInfo>ID {props.contacts[props.indexValue].id}</IdInfo>
                 <PhoneInfo>{props.contacts[props.indexValue].phone}</PhoneInfo>
                 <PesquisaContainer>
-                  <Pesquisa placeholder="R$ 0,00"/>
+                  <Pesquisa keyboardType='numeric' placeholder="R$ 0,00"/>
                   <PesquisaButton>
                   <MaterialIcons name="send" size={22} color="#FFB039"/>
                   </PesquisaButton>

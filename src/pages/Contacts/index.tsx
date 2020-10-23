@@ -29,7 +29,6 @@ function Contacts(){
                     <Pesquisa placeholder="pesquisar" />
                 </HeaderSearch>
                 <ContactAvatars selectAvatar={selectAvatar} imageAvatar={contacts}/>
-                {!!currentIndex && contacts?.[currentIndex] && <View><Text></Text></View>}
                 <ContactInfo indexValue={currentIndex} contacts={contacts} />
             </Container>
         </>
