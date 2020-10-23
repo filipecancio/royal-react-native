@@ -1,16 +1,33 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Container} from './styles';
+import Avatar from '../Avatar';
+import { Container,Logo,InfoContainer,Title,IdInfo,PhoneInfo,PesquisaContainer,Pesquisa,PesquisaButton } from './styles';
+import { MaterialIcons} from '@expo/vector-icons';
 
 export interface Props {
-    indexValue: number|null;
+    indexValue: number|null,
+    contacts:any,
 }
 
 const ContactInfo: React.FC<Props> = (props) => {
       return (
         <>
         <Container>
-            <Text>{props.indexValue?props.indexValue:'nada'}</Text>
+            {props.indexValue==null?(<Logo>Royal</Logo>):(
+              <InfoContainer>
+                <Avatar source={props.contacts[props.indexValue].avatar} size={'200px'}/>
+                <Title>{props.contacts[props.indexValue].name}</Title>
+                <IdInfo>ID {props.contacts[props.indexValue].id}</IdInfo>
+                <PhoneInfo>{props.contacts[props.indexValue].phone}</PhoneInfo>
+                <PesquisaContainer>
+                  <Pesquisa placeholder="R$ 0,00"/>
+                  <PesquisaButton>
+                  <MaterialIcons name="send" size={22} color="#FFB039"/>
+                  </PesquisaButton>
+                </PesquisaContainer>
+                
+              </InfoContainer>
+            )}
         </Container>
         </>
       );

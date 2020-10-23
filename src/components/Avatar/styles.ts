@@ -1,8 +1,8 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.View<{size: any}>`
 	border: 1px #FFB039;
-	border-radius: 500;
+	border-radius: 500px;
 	padding: 5px;
 `;
 export const AvatarImage = styled.Image<{size: any}>`

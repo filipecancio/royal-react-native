@@ -1035,6 +1035,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@expo-google-fonts/fredoka-one@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/fredoka-one/-/fredoka-one-0.1.0.tgz#533d527fec72aded081c9818f5b0580596a4aac4"
+  integrity sha512-sgENru16BMD8qnmYMc+eRAT9B8wj84ceFX4LvlCy+EcUwra+QsWiF8VoSALW3Cg+0cH1tCg/1rHkka7wj9G7/g==
+
 "@expo-google-fonts/inter@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/inter/-/inter-0.1.0.tgz#399f068437824fcbf6aa3da5fcf490dba2af85a3"
