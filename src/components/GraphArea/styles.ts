@@ -12,8 +12,26 @@ export const Container = styled.View`
 export const SuperiorArea = styled.View`
     height:40px;
     width: 100%;
+    flex-direction:row;
+`;
+export const ContentArea = styled.View`
+    width: 100%;
+    justify-content:center;
+    align-items:center;
 `;
 export const Title = styled.Text`
-    color: #000000;
-    font-size:30px;
+    font-family:'Raleway_400Regular';
+    color: #FFB039;
+    font-size:20px;
+`;
+export const Title2 = styled.Text`
+    font-family:'Raleway_700Bold';
+    width:100%;
+    color: #FFB039;
+    font-size:10px;
+`;
+export const Subtitle = styled.Text`
+    font-family:'Raleway_700Bold';
+    color: #2C8CC2;
+    font-size:15px;
 `;
