@@ -4,7 +4,8 @@ import TransactionInfo from '../TransactionInfo';
 import { Container } from './styles';
 
 export interface Props {
-  transactions:any
+  transactions:any,
+  selectId:(id:number)=>void;
 }
 
 const TransactionArea: React.FC<Props> = (props) => {
@@ -12,7 +13,7 @@ const TransactionArea: React.FC<Props> = (props) => {
         <>
           <Container>
             <ScrollView>
-              {props.transactions.map((contact:any,index:number)=> (<TransactionInfo key={index}  contact={contact}/>))}
+              {props.transactions.map((contact:any,index:number)=> (<TransactionInfo selectId={props.selectId} key={index}  contact={contact}/>))}
             </ScrollView>
           </Container> 
         </>

@@ -1,16 +1,20 @@
 import React from 'react';
 import GoHomeButton from '../GoHomeButton';
-import { Container } from './styles';
+import { Container,Title,SuperiorArea } from './styles';
 
 export interface Props {
-    handlePage:any;
+    handlePage:any,
+    currentId:number
 }
 
 const GraphArea: React.FC<Props> = (props) => {
       return (
         <>
                 <Container>
-                    <GoHomeButton handlePage={props.handlePage} />
+                    <SuperiorArea>
+                      <GoHomeButton handlePage={props.handlePage} />
+                    </SuperiorArea>
+                    <Title>{props.currentId}</Title>
                 </Container> 
         </>
       );

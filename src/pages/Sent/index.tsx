@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Text, View } from 'react-native';
 import { Container } from './styles';
 import {useNavigation} from '@react-navigation/native';
@@ -11,16 +11,21 @@ import transactions from '../../util/data/sent.json';
 
 function Sent(){
     const {navigate} = useNavigation();
+    const [currentId,setId] = useState<number|null>(null);
 
     function goHome(){
         navigate('Home');
     }
 
+    function selectId (index:any){
+        setId(index);
+    }
+
     return(
         <>
             <Container>
-                <GraphArea handlePage={goHome}></GraphArea>
-                <TransactionArea transactions={transactions}/>
+                <GraphArea currentId={currentId} handlePage={goHome}></GraphArea>
+                <TransactionArea selectId={selectId} transactions={transactions}/>
             </Container>
         </>
     );
