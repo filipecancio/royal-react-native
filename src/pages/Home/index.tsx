@@ -1,8 +1,17 @@
 import React from 'react';
-import {Text, View } from 'react-native';
-import { Container,Titulo } from './styles';
+import {Text, Image } from 'react-native';
+import { Container,Logo } from './styles';
 import {useNavigation} from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+
+import ButtonContact from '../../components/ButtonContact';
+import ButtonHistory from '../../components/ButtonHistory';
+import UserInformation from '../../components/UserInformation';
+
+import logo from '../../util/images/logo.png';
+import filipeAvatar from '../../util/images/filipe.png';
+import person from '../../util/data/home.json';
+
 
 
 function Home(){
@@ -12,19 +21,16 @@ function Home(){
         navigate('Contacts');
     }
     function handleSent(){
-        navigate('Sent');
+        navigate('Transaction');
     }
 
     return(
         <>
             <Container>
-                <Titulo>Home</Titulo>
-                <TouchableOpacity onPress={handleContacts}>
-                    <Text>Contacts</Text>
-                </TouchableOpacity>
-                <TouchableOpacity onPress={handleSent}>
-                    <Text>Sent</Text>
-                </TouchableOpacity>
+                <Logo source={logo} />
+                <UserInformation info={person} /> 
+                <ButtonContact handlePage={handleContacts}/>
+                <ButtonHistory handlePage={handleSent}/>
             </Container>
         </>
     );
