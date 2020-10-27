@@ -21,7 +21,7 @@ function Home(){
         navigate('Contacts');
     }
     function handleSent(){
-        navigate('Sent');
+        navigate('Transaction');
     }
 
     return(

@@ -1,0 +1,56 @@
+[
+    {
+        "month":10,
+        "year":"2020",
+        "totals":[
+            {
+                "id":0,
+                "nick":"totais",
+                "debit": 106,
+                "credit": 904
+            },
+            {
+                "id":789,
+                "nick":"Rafaela",
+                "debit": 8,
+                "credit": 330
+            },
+            {
+                "id":123,
+                "nick":"Ariadne",
+                "debit": 0,
+                "credit": 250
+            },
+            {
+                "id":456,
+                "nick":"Cassio",
+                "debit": 0,
+                "credit": 100
+            },
+            {
+                "id":654,
+                "nick":"Gleisson",
+                "debit": 60,
+                "credit": 0
+            },
+            {
+                "id":891,
+                "nick":"Thaise",
+                "debit": 0,
+                "credit": 60
+            },
+            {
+                "id":567,
+                "nick":"Milena",
+                "debit": 38,
+                "credit": 64
+            },
+            {
+                "id":987,
+                "nick":"Ianka",
+                "debit": 0,
+                "credit": 100
+            }
+        ]
+    }
+]

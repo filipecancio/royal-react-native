@@ -6,10 +6,10 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import GoHomeButton from '../../components/GoHomeButton';
 import GraphArea from '../../components/GraphArea';
 import TransactionArea from '../../components/TransactionArea';
-import transactions from '../../util/data/sent.json';
+import transactions from '../../util/data/transactions.json';
 
 
-function Sent(){
+function Transaction(){
     const {navigate} = useNavigation();
     const [currentId,setId] = useState<number|null>(null);
 
@@ -31,4 +31,4 @@ function Sent(){
     );
 }
 
-export default Sent;
+export default Transaction;

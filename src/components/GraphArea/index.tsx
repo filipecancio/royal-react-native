@@ -7,7 +7,7 @@ import { Container,Title,Subtitle,Title2,SuperiorArea,ContentArea } from './styl
 
 export interface Props {
     handlePage:any,
-    currentId:number
+    currentId:number|null
 }
 
 const GraphArea: React.FC<Props> = (props) => {
