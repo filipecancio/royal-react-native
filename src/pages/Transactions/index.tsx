@@ -7,24 +7,28 @@ import GoHomeButton from '../../components/GoHomeButton';
 import GraphArea from '../../components/GraphArea';
 import TransactionArea from '../../components/TransactionArea';
 import transactions from '../../util/data/transactions.json';
+import query from '../../util/data/transactionsQuery.json';
+
 
 
 function Transaction(){
     const {navigate} = useNavigation();
-    const [currentId,setId] = useState<number|null>(null);
+    const [currentValue,setValue] = useState<any>(query.totals[0]);
 
     function goHome(){
         navigate('Home');
     }
 
     function selectId (index:any){
-        setId(index);
+        const response = query.totals.map((value)=>{
+            if(value.id == index){setValue(value)};
+        })
     }
 
     return(
         <>
             <Container>
-                <GraphArea currentId={currentId} handlePage={goHome}></GraphArea>
+                <GraphArea graphValues={currentValue} handlePage={goHome}></GraphArea>
                 <TransactionArea selectId={selectId} transactions={transactions}/>
             </Container>
         </>

@@ -7,7 +7,7 @@ import { Container,Title,Subtitle,Title2,SuperiorArea,ContentArea } from './styl
 
 export interface Props {
     handlePage:any,
-    currentId:number|null
+    graphValues:any
 }
 
 const GraphArea: React.FC<Props> = (props) => {
@@ -21,15 +21,13 @@ const GraphArea: React.FC<Props> = (props) => {
                         <Subtitle>outubro/2020</Subtitle>
                       </ContentArea>
                     </SuperiorArea>
-                    <Title2>{props.currentId}</Title2>
-                    
                     <Title2>Total de transações</Title2>
-                    <GraphPie percentage={34.45} />
+                    <GraphPie debit={props.graphValues.debit} credit={props.graphValues.credit} />
                     <Title2>Total de transferências no mês</Title2>
-                    <GraphLine totais={[78,46,14]}/>
+                    <GraphLine totais={props.graphValues.totalsDebit}/>
                     <Title2>Total de recebimentos no mês</Title2>
-                    <GraphLine totais={[85,56,24]}/>
-                    <LegendBar legends={['Rafaela','Ariadne','Gleisson']}/>
+                    <GraphLine totais={props.graphValues.totalsCredit}/>
+                    <LegendBar legends={props.graphValues.nick}/>
                 </Container> 
         </>
       );
