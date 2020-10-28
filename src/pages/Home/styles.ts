@@ -1,7 +1,10 @@
 import styled from 'styled-components/native';
 
-export const Logo = styled.Image`
-margin: 50px;
+export const Logo = styled.Text`
+	margin: 50px;
+	font-family:'FredokaOne_400Regular';
+	color:#FFFFFF;
+    font-size:35px;
 `;
 export const Container = styled.View`
 	flex:1;

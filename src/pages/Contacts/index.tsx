@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container,HeaderSearch,Pesquisa } from './styles';
 import {useNavigation} from '@react-navigation/native';
-import { MaterialIcons} from '@expo/vector-icons';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import ContactAvatars from '../../components/ContactAvatars';
-import contacts from '../../util/data/contacts.json';
-import { Text, View } from 'react-native';
 import ContactInfo from '../../components/ContactInfo';
 import GoHomeButton from '../../components/GoHomeButton';
+import getData from "../../services/api.services";
 
 
 function Contacts(){
     const {navigate} = useNavigation();
     const [currentIndex,setIndex] = useState<number|null>(null);
+    const [contacts, setContacts] = useState();
+
+    useEffect(() => {
+        (async () => {
+          const content = await getData("contacts");
+          setContacts(content);
+        })();
+      }, []);
 
     function goHome(){
         navigate('Home');
@@ -28,8 +33,8 @@ function Contacts(){
                     <GoHomeButton handlePage={goHome}/>
                     <Pesquisa placeholder="pesquisar" />
                 </HeaderSearch>
-                <ContactAvatars selectAvatar={selectAvatar} imageAvatar={contacts}/>
-                <ContactInfo indexValue={currentIndex} contacts={contacts} />
+                {contacts && <ContactAvatars selectAvatar={selectAvatar} imageAvatar={contacts}/>}
+                {contacts && <ContactInfo indexValue={currentIndex} contacts={contacts} />}
             </Container>
         </>
     );

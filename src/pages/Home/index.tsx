@@ -1,20 +1,24 @@
-import React from 'react';
-import {Text, Image } from 'react-native';
+import React,{ useState, useEffect } from 'react';
 import { Container,Logo } from './styles';
 import {useNavigation} from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import ButtonContact from '../../components/ButtonContact';
 import ButtonHistory from '../../components/ButtonHistory';
 import UserInformation from '../../components/UserInformation';
+import getData from "../../services/api.services";
 
-import logo from '../../util/images/logo.png';
-import filipeAvatar from '../../util/images/filipe.png';
-import person from '../../util/data/home.json';
 
 
 
 function Home(){
+    const [user, setUser] = useState();
+    useEffect(() => {
+        (async () => {
+          const content = await getData("home");
+          setUser(content);
+        })();
+      }, []);
+
     const {navigate} = useNavigation();
 
     function handleContacts(){
@@ -27,8 +31,8 @@ function Home(){
     return(
         <>
             <Container>
-                <Logo source={logo} />
-                <UserInformation info={person} /> 
+                <Logo>Royal</Logo>
+                {user && <UserInformation info={user} />}
                 <ButtonContact handlePage={handleContacts}/>
                 <ButtonHistory handlePage={handleSent}/>
             </Container>

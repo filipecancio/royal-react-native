@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const base_url = '';
+const base_url = 'https://royal.cancio.dev';
 
 async function getData(node_id:string) {
   try {
