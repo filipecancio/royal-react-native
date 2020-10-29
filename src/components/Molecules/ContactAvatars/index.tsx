@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
-import Avatar from '../../Atoms/Avatar';
+import AvatarCircle from '../../Atoms/AvatarCircle';
 import { AvatarContainer,Container,Title } from './styles';
 
 export interface Props {
@@ -17,7 +17,7 @@ const ContactAvatars: React.FC<Props> = (props) => {
           <ScrollView horizontal>
             {props.imageAvatar.map((contact:any,index:number)=>(
                   <AvatarContainer key={index} onPress={()=>selectAvatar(index)}>
-                    <Avatar source={contact.avatar} size={"50px"} />
+                    <AvatarCircle source={contact.avatar} size={"50px"} />
                     <Title>{contact.nick}</Title>
                   </AvatarContainer> 
                 ))}

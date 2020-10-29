@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../../Atoms/Avatar';
+import AvatarCircle from '../../Atoms/AvatarCircle';
 import ContactInfo from '../../Molecules/ContactInfo';
 import { Container,TextName,TextContainer,TextDate,TextValue } from './styles';
 
@@ -13,7 +13,7 @@ const TransactionInfo: React.FC<Props> = (props) => {
       return (
         <>
                 <Container onPress={()=> selectId(props.contact.id)}>
-                    <Avatar source={props.contact.avatar} size={'50px'} />
+                    <AvatarCircle source={props.contact.avatar} size={'50px'} />
                     <TextContainer>
                       <TextName>{props.contact.name}</TextName>
                       <TextDate>{props.contact.date}</TextDate>

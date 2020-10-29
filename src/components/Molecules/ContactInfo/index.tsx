@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Avatar from '../../Atoms/Avatar';
+import AvatarCircle from '../../Atoms/AvatarCircle';
 import { Container,Logo,InfoContainer,Title,IdInfo,PhoneInfo,PesquisaContainer,Pesquisa,PesquisaButton } from './styles';
 import { MaterialIcons} from '@expo/vector-icons';
 
@@ -15,7 +15,7 @@ const ContactInfo: React.FC<Props> = (props) => {
         <Container>
             {props.indexValue==null?(<Logo>Royal</Logo>):(
               <InfoContainer>
-                <Avatar source={props.contacts[props.indexValue].avatar} size={'200px'}/>
+                <AvatarCircle source={props.contacts[props.indexValue].avatar} size={'200px'}/>
                 <Title>{props.contacts[props.indexValue].name}</Title>
                 <IdInfo>ID {props.contacts[props.indexValue].id}</IdInfo>
                 <PhoneInfo>{props.contacts[props.indexValue].phone}</PhoneInfo>

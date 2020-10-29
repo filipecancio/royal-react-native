@@ -5,7 +5,7 @@ export const Container = styled.View`
 	border-radius: 500px;
 	padding: 5px;
 `;
-export const AvatarImage = styled.Image<{size: any}>`
+export const Avatar = styled.Image<{size: any}>`
 	width: ${props => props.size};
 	height: ${props => props.size};
 	border-radius: 500px;
