@@ -2,10 +2,10 @@ import React from 'react';
 import { Container,Subtitle } from './styles';
 
 export interface Props {
-  handlePage: any;
+  handlePage: ()=>void;
 }
 
-const ButtonHistory: React.FC<Props> = (props) => {
+const ButtonTransaction: React.FC<Props> = (props) => {
       return (
         <>
           <Container onPress={props.handlePage}>
@@ -15,4 +15,4 @@ const ButtonHistory: React.FC<Props> = (props) => {
       );
     }
 
-export default ButtonHistory;
+export default ButtonTransaction;

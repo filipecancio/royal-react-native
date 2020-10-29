@@ -3,7 +3,7 @@ import { MaterialIcons} from '@expo/vector-icons';
 import { Container,IconButton,IconContainer,Subtitle } from './styles';
 
 export interface Props {
-  handlePage: any;
+  handlePage: ()=>void;
 }
 
 const ButtonContact: React.FC<Props> = (props) => {

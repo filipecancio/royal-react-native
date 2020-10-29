@@ -11,7 +11,7 @@ const LegendBar: React.FC<Props> = (props) => {
       return (
         <>
         <Container>
-        {props.legends.map((legend:string,index:number)=><Legend key={legend} color={colors[index]} value={legend}/>)}
+        {props.legends.map((legend:string,index:number)=><GraphSubtitle key={legend} color={colors[index]} value={legend}/>)}
         <GraphSubtitle key={0} color={"#0051B0"} value={"outros"}/>
         </Container>
         </>

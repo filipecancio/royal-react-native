@@ -3,7 +3,7 @@ import { Container,Logo } from './styles';
 import {useNavigation} from '@react-navigation/native';
 
 import ButtonContact from '../../components/Atoms/ButtonContact';
-import ButtonHistory from '../../components/Atoms/ButtonHistory';
+import ButtonTransaction from '../../components/Atoms/ButtonTransaction';
 import UserInformation from '../../components/Molecules/UserInformation';
 import getData from "../../services/api.services";
 
@@ -34,7 +34,7 @@ function Home(){
                 <Logo>Royal</Logo>
                 {user && <UserInformation info={user} />}
                 <ButtonContact handlePage={handleContacts}/>
-                <ButtonHistory handlePage={handleSent}/>
+                <ButtonTransaction handlePage={handleSent}/>
             </Container>
         </>
     );

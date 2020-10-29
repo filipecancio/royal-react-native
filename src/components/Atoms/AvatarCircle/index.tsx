@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Avatar } from './styles';
 
 export interface Props {
-    source: any;
-    size: any;
+    source: string;
+    size: string;
 }
 
 const AvatarCircle: React.FC<Props> = (props) => {
