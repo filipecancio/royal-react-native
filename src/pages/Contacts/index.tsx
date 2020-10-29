@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Container,HeaderSearch,Pesquisa } from './styles';
 import {useNavigation} from '@react-navigation/native';
-import ContactAvatars from '../../components/ContactAvatars';
-import ContactInfo from '../../components/ContactInfo';
-import GoHomeButton from '../../components/GoHomeButton';
+import ContactAvatars from '../../components/Molecules/ContactAvatars';
+import ContactInfo from '../../components/Molecules/ContactInfo';
+import GoHomeButton from '../../components/Atoms/GoHomeButton';
 import getData from "../../services/api.services";
 
 

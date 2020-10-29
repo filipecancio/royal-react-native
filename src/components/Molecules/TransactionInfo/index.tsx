@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '../Avatar';
-import ContactInfo from '../ContactInfo';
+import Avatar from '../../Atoms/Avatar';
+import ContactInfo from '../../Molecules/ContactInfo';
 import { Container,TextName,TextContainer,TextDate,TextValue } from './styles';
 
 export interface Props {

@@ -2,9 +2,9 @@ import React,{ useState, useEffect } from 'react';
 import { Container,Logo } from './styles';
 import {useNavigation} from '@react-navigation/native';
 
-import ButtonContact from '../../components/ButtonContact';
-import ButtonHistory from '../../components/ButtonHistory';
-import UserInformation from '../../components/UserInformation';
+import ButtonContact from '../../components/Atoms/ButtonContact';
+import ButtonHistory from '../../components/Atoms/ButtonHistory';
+import UserInformation from '../../components/Molecules/UserInformation';
 import getData from "../../services/api.services";
 
 

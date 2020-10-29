@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container,AvatarImage } from './styles';
+import { Container, AvatarImage } from './styles';
 
 export interface Props {
     source: any;

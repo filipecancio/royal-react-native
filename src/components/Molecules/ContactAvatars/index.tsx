@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
-import Avatar from '../Avatar';
+import Avatar from '../../Atoms/Avatar';
 import { AvatarContainer,Container,Title } from './styles';
 
 export interface Props {

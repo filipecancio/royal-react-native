@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container} from './styles';
 import Svg from 'react-native-svg';
-import ProgressBar from '../ProgressBar';
+import ProgressBar from '../../Atoms/ProgressBar';
 
 export interface Props {
   totais:any

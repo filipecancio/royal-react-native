@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Avatar from '../Avatar';
+import Avatar from '../../Atoms/Avatar';
 import { Container,Logo,InfoContainer,Title,IdInfo,PhoneInfo,PesquisaContainer,Pesquisa,PesquisaButton } from './styles';
 import { MaterialIcons} from '@expo/vector-icons';
 

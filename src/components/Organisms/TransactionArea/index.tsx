@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
-import TransactionInfo from '../TransactionInfo';
+import TransactionInfo from '../../Molecules/TransactionInfo';
 import { Container } from './styles';
 
 export interface Props {

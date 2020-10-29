@@ -1,8 +1,8 @@
 import React from 'react';
-import GoHomeButton from '../GoHomeButton';
-import GraphLine from '../GraphLine';
-import GraphPie from '../GraphPie';
-import LegendBar from '../LegendBar';
+import GoHomeButton from '../../Atoms/GoHomeButton';
+import GraphLine from '../../Molecules/GraphLine';
+import GraphPie from '../../Molecules/GraphPie';
+import LegendBar from '../../Molecules/LegendBar';
 import { Container,Title,Subtitle,Title2,SuperiorArea,ContentArea } from './styles';
 
 export interface Props {

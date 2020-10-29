@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container,LegendArea,Title } from './styles';
 import Svg, { Circle, Rect,Text,Ellipse } from 'react-native-svg';
-import LegendMoney from '../LegendMoney';
+import LegendMoney from '../../Atoms/LegendMoney';
 
 export interface Props {
   debit:number,

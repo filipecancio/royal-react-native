@@ -1,5 +1,5 @@
 import React from 'react';
-import Legend from '../Legend';
+import Legend from '../../Atoms/Legend';
 import { Container} from './styles';
 
 export interface Props {

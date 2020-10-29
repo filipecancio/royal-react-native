@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container,Titular,Apelido,Titulo } from './styles';
-import Avatar from '../Avatar';
+import Avatar from '../../Atoms/Avatar';
 
 export interface Props {
     info: any;
