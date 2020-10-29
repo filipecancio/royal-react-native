@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container,LegendArea,Title } from './styles';
 import Svg, { Circle, Rect,Text,Ellipse } from 'react-native-svg';
-import LegendMoney from '../../Atoms/LegendMoney';
+import GraphSubtitleMoney from '../../Atoms/GraphSubtitleMoney';
 
 export interface Props {
   debit:number,
@@ -23,9 +23,9 @@ const GraphLine: React.FC<Props> = (props) => {
                 </Svg>
                 <LegendArea>
                   <Title>Transferidos</Title>
-                  <LegendMoney value={`R$ ${props.debit.toFixed(2)}`} color="#009FF9"/>
+                  <GraphSubtitleMoney value={`R$ ${props.debit.toFixed(2)}`} color="#009FF9"/>
                   <Title>Recebidos</Title>
-                  <LegendMoney value={`R$ ${props.credit.toFixed(2)}`} color="#2C8CC2"/>
+                  <GraphSubtitleMoney value={`R$ ${props.credit.toFixed(2)}`} color="#2C8CC2"/>
                 </LegendArea>
             </Container> 
         </>

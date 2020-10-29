@@ -1,5 +1,5 @@
 import React from 'react';
-import Legend from '../../Atoms/Legend';
+import GraphSubtitle from '../../Atoms/GraphSubtitle';
 import { Container} from './styles';
 
 export interface Props {
@@ -12,7 +12,7 @@ const LegendBar: React.FC<Props> = (props) => {
         <>
         <Container>
         {props.legends.map((legend:string,index:number)=><Legend key={legend} color={colors[index]} value={legend}/>)}
-        <Legend key={0} color={"#0051B0"} value={"outros"}/>
+        <GraphSubtitle key={0} color={"#0051B0"} value={"outros"}/>
         </Container>
         </>
       );

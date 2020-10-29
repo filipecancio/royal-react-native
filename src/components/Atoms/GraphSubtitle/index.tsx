@@ -6,7 +6,7 @@ export interface Props {
     color:string
 }
 
-const Legend: React.FC<Props> = (props) => {
+const GraphSubtitle: React.FC<Props> = (props) => {
       return (
         <>
         <Container>
@@ -17,4 +17,4 @@ const Legend: React.FC<Props> = (props) => {
       );
     }
 
-export default Legend;
+export default GraphSubtitle;

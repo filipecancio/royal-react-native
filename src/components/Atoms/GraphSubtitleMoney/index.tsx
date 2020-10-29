@@ -6,7 +6,7 @@ export interface Props {
     color:string
 }
 
-const LegendMoney: React.FC<Props> = (props) => {
+const GraphSubtitleMoney: React.FC<Props> = (props) => {
       return (
         <>
         <Container>
@@ -17,4 +17,4 @@ const LegendMoney: React.FC<Props> = (props) => {
       );
     }
 
-export default LegendMoney;
+export default GraphSubtitleMoney;

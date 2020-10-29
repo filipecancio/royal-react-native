@@ -7,7 +7,7 @@ export interface Props {
     color:string
 }
 
-const ProgressBar: React.FC<Props> = (props) => {
+const GraphLinearBar: React.FC<Props> = (props) => {
         const percentage:number = props.value - props.previousValue;
       return (
         <>
@@ -17,4 +17,4 @@ const ProgressBar: React.FC<Props> = (props) => {
       );
     }
 
-export default ProgressBar;
+export default GraphLinearBar;

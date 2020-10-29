@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container} from './styles';
 import Svg from 'react-native-svg';
-import ProgressBar from '../../Atoms/ProgressBar';
+import GraphLinearBar from '../../Atoms/GraphLinearBar';
 
 export interface Props {
   totais:any
@@ -13,8 +13,8 @@ const GraphLine: React.FC<Props> = (props) => {
         <>
             <Container>
                 <Svg height="100%" width="100%" >
-                  <ProgressBar color="#0051B0" previousValue={props.totais[0]} value={100}/>
-                  {props.totais.map((total:number,index:number)=><ProgressBar key={total} color={colors[index]} previousValue={props.totais[index+1]?props.totais[index+1]:0} value={total}/>)}
+                  <GraphLinearBar color="#0051B0" previousValue={props.totais[0]} value={100}/>
+                  {props.totais.map((total:number,index:number)=><GraphLinearBar key={total} color={colors[index]} previousValue={props.totais[index+1]?props.totais[index+1]:0} value={total}/>)}
                 </Svg>
             </Container> 
         </>
