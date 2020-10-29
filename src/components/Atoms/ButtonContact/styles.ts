@@ -24,7 +24,7 @@ export const IconButton = styled.View`
 export const IconContainer = styled.View`
     transform: rotate(-45deg);
 `;
-export const Legenda = styled.Text`
+export const Subtitle = styled.Text`
     color: #FFFFFFFF;
     font-family:'Raleway_400Regular';
 `;

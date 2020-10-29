@@ -15,7 +15,7 @@ export const Container = styled.TouchableOpacity`
     align-self: flex-end;
   
 `;
-export const Legenda = styled.Text`
+export const Subtitle = styled.Text`
     color: #FFB039;
     font-family:'Raleway_400Regular';
     font-size:20px;

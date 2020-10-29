@@ -15,7 +15,7 @@ const GraphArea: React.FC<Props> = (props) => {
         <>
                 <Container>
                     <SuperiorArea>
-                      <GoHomeButton handlePage={props.handlePage} />
+                      <GoHomeButton handlePage={props.handlePage} color="#2C8CC2" />
                       <ContentArea>
                         <Title>Transferências Recentes</Title>
                         <Subtitle>outubro/2020</Subtitle>

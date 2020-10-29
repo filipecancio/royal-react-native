@@ -30,7 +30,7 @@ function Contacts(){
         <>
             <Container>
                 <HeaderSearch>
-                    <GoHomeButton handlePage={goHome}/>
+                    <GoHomeButton handlePage={goHome} color="#ffffff" />
                     <Pesquisa placeholder="pesquisar" />
                 </HeaderSearch>
                 {contacts && <ContactAvatars selectAvatar={selectAvatar} imageAvatar={contacts}/>}

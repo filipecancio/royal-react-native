@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container,Legenda } from './styles';
+import { Container,Subtitle } from './styles';
 
 export interface Props {
   handlePage: any;
@@ -9,7 +9,7 @@ const ButtonHistory: React.FC<Props> = (props) => {
       return (
         <>
           <Container onPress={props.handlePage}>
-          <Legenda>Transferências Recentes</Legenda>
+          <Subtitle>Transferências Recentes</Subtitle>
           </Container>
         </>
       );
