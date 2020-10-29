@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container,LegendArea,Title } from './styles';
-import Svg, { Circle, Rect,Text,Ellipse } from 'react-native-svg';
+import Svg, { Circle,Text } from 'react-native-svg';
 import GraphSubtitleMoney from '../../Atoms/GraphSubtitleMoney';
 
 export interface Props {

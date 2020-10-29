@@ -4,18 +4,18 @@ import AvatarCircle from '../../Atoms/AvatarCircle';
 import { AvatarContainer,Container,Title } from './styles';
 
 export interface Props {
-    imageAvatar:any;
+    contacts:any;
     selectAvatar:(index:number)=>void;
 }
 
-const ContactAvatars: React.FC<Props> = (props) => {
+const ContactList: React.FC<Props> = (props) => {
 
       const {selectAvatar} = props;
       return (
         <>
         <Container>
           <ScrollView horizontal>
-            {props.imageAvatar.map((contact:any,index:number)=>(
+            {props.contacts.map((contact:any,index:number)=>(
                   <AvatarContainer key={index} onPress={()=>selectAvatar(index)}>
                     <AvatarCircle source={contact.avatar} size={"50px"} />
                     <Title>{contact.nick}</Title>
@@ -28,4 +28,4 @@ const ContactAvatars: React.FC<Props> = (props) => {
       );
     }
 
-export default ContactAvatars;
+export default ContactList;

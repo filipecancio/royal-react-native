@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container,HeaderSearch,Pesquisa } from './styles';
 import {useNavigation} from '@react-navigation/native';
-import ContactAvatars from '../../components/Molecules/ContactAvatars';
+import ContactList from '../../components/Molecules/ContactList';
 import ContactInfo from '../../components/Molecules/ContactInfo';
 import GoHomeButton from '../../components/Atoms/GoHomeButton';
 import getData from "../../services/api.services";
@@ -33,7 +33,7 @@ function Contacts(){
                     <GoHomeButton handlePage={goHome} color="#ffffff" />
                     <Pesquisa placeholder="pesquisar" />
                 </HeaderSearch>
-                {contacts && <ContactAvatars selectAvatar={selectAvatar} imageAvatar={contacts}/>}
+                {contacts && <ContactList selectAvatar={selectAvatar} contacts={contacts}/>}
                 {contacts && <ContactInfo indexValue={currentIndex} contacts={contacts} />}
             </Container>
         </>
