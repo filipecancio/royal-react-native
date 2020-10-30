@@ -1,6 +1,5 @@
 import React from 'react';
 import AvatarCircle from '../../Atoms/AvatarCircle';
-import ContactInfo from '../../Molecules/ContactInfo';
 import { Container,TextName,TextContainer,TextDate,TextValue } from './styles';
 
 export interface Props {

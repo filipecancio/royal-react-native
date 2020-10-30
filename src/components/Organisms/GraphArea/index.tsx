@@ -2,7 +2,7 @@ import React from 'react';
 import GoHomeButton from '../../Atoms/GoHomeButton';
 import GraphLine from '../../Molecules/GraphLine';
 import GraphPie from '../../Molecules/GraphPie';
-import LegendBar from '../../Molecules/LegendBar';
+import SubtitleBar from '../../Molecules/SubtitleBar';
 import { Container,Title,Subtitle,Title2,SuperiorArea,ContentArea } from './styles';
 
 export interface Props {
@@ -27,7 +27,7 @@ const GraphArea: React.FC<Props> = (props) => {
                     <GraphLine totais={props.graphValues.totalsDebit}/>
                     <Title2>Total de recebimentos no mês</Title2>
                     <GraphLine totais={props.graphValues.totalsCredit}/>
-                    <LegendBar legends={props.graphValues.nick}/>
+                    <SubtitleBar subs={props.graphValues.nick}/>
                 </Container> 
         </>
       );
